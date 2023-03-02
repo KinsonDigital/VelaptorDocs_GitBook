@@ -1,0 +1,59 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "request": "launch",
+            "name": "Launch (With Reset)",
+            "type": "node",
+            "program": "${workspaceFolder}/cicd/main.ts",
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "reset-docs",
+            "runtimeExecutable": "C:\\Users\\kinso\\.deno\\bin\\deno.EXE",
+            "runtimeArgs": [
+                "run",
+                "--inspect-wait",
+                "--allow-all",
+            ],
+            "args": [
+                "${workspaceFolder}/.vscode/processed-docs",
+                "v1.0.0-preview.17",
+            ],
+            "attachSimplePort": 9229
+        },
+        {
+            "request": "launch",
+            "name": "Launch (Without Reset)",
+            "type": "node",
+            "program": "${workspaceFolder}/cicd/main.ts",
+            "cwd": "${workspaceFolder}",
+            "runtimeExecutable": "C:\\Users\\kinso\\.deno\\bin\\deno.EXE",
+            "runtimeArgs": [
+                "run",
+                "--inspect-wait",
+                "--allow-all",
+            ],
+            "args": [
+                "${workspaceFolder}/.vscode/processed-docs",
+                "v1.0.0-preview.17",
+            ],
+            "attachSimplePort": 9229
+        },
+        {
+            "request": "launch",
+            "name": "Clean Docs Testing",
+            "type": "node",
+            "program": "${workspaceFolder}/.vscode/reset-docs.ts",
+            "cwd": "${workspaceFolder}",
+            "runtimeExecutable": "C:\\Users\\kinso\\.deno\\bin\\deno.EXE",
+            "runtimeArgs": [
+                "run",
+                "--inspect-wait",
+                "--allow-all",
+            ],
+            "attachSimplePort": 9229
+        }
+    ]
+}
