@@ -1,0 +1,5 @@
+{
+    "tasks": {
+      "reset-docs": "deno run --allow-read --allow-write './.vscode/reset-docs.ts'"
+    }
+}
